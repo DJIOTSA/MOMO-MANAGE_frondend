@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="djiotsa christian (El Mhulo)">
+    <meta name="description"
+        content="Employee-goal-tracker app to manage your employee activities including the payroll system.">
+    <title>MOMO MANAGE</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/icons/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icons/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/icons/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../assets/img/icons/favicon/site.webmanifest" />
+
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/EGT.css" rel="stylesheet" />
+</head>
+
+<body class="g-sidenav-show bg-main">
+    <!--\\\\\\\\ NAVBAR BACKGROUND \\\\\\\\-->
+    <div class="trans-height-300 nav-bg position-absolute w-100"></div>
+    <!--\\\\\\\\\\\\\ SIDENAV \\\\\\\\\\\\\-->
+    <aside class="sidenav sidebar-bg navbar navbar-vertical navbar-expand-xs border-0 my-1 fixed-start "
+        id="sidenav-main">
+        <div class="sidenav-header ">
+            <i class="fas fa-times p-1 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+                aria-hidden="true" id="iconSidenav"></i>
+            <a class="m-0" href="">
+                <img src="../assets/img/logos/visa.png" class="nav-logo" alt="main_logo">
+                <span class=" font-weight-bold ">MOMO MANAGE</span>
+            </a>
+        </div>
+        <hr class="horizontal dark mt-0">
+
+        <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+            <ul class="navbar-nav">
+                <!-- dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link " href="../pages/dashboard.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-tv-2 text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Dashboard</span>
+                    </a>
+                </li>
+                <!-- Employees pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/employees.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fa fa-users text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Employees</span>
+                    </a>
+                </li>
+                <!-- make transaction  -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/transaction.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-money-bill-wave-alt text-sm "></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Transactions</span>
+                    </a>
+                </li>
+                <!-- create retirement saving -->
+                <li class="nav-item">
+                    <a class="nav-link activated shadow-sm " href="../pages/retiement.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-money-coins text-sm"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Saving account</span>
+                    </a>
+                </li>
+                <!-- chat -->
+                <li class="nav-item">
+                    <a class="nav-link " href="../pages/chat.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-comment-dollar text-sm "></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Discussion</span>
+                    </a>
+                </li>
+                <!-- notification -->
+                <li class="nav-item">
+                    <a class="nav-link " href="../pages/notification.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-bell-55 text-sm"><sup class="">19</sup></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Notification</span>
+                    </a>
+                </li>
+                <!-- FAQs -->
+                <li class="nav-item">
+                    <a class="nav-link " href="../pages/faqs.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-question-circle text-sm"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">FAQs</span>
+                    </a>
+                </li>
+
+                <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\ USER ACCOUNT PAGES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">
+                        Account Details
+                    </h6>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/profile1.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/sign-in.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fa fa-sign-in-alt text-sm"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Sign In</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/sign-up.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fa fa-user-plus text-sm"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Sign Up</span>
+                    </a>
+                </li>
+
+                <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\ MOMO INFORMATION PAGES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">
+                        Who Are we
+                    </h6>
+                </li>
+                <!-- About us -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/aboutus.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-info-circle   text-sm "></i>
+                        </div>
+                        <span class="nav-link-text ms-1">About Us</span>
+                    </a>
+                </li>
+                <!-- license -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/license.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-key text-sm "></i>
+                        </div>
+                        <span class="nav-link-text ms-1">License</span>
+                    </a>
+                </li>
+                <!-- user credentials -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/credential.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-user-secret text-sm "></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Credential</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!--"""""" sidenav footer """"""-->
+        <div class="sidenav-footer mx-3 pt-3 ">
+            <a href="../pages/aboutus.html" class="btn bg-gradient-primary btn-sm w-100 mb-3">About Us</a>
+            <a class="btn bg-gradient-warning btn-sm mb-0 w-100" href="../pages/faqs.html" type="button">How does it
+                Works?</a>
+        </div>
+    </aside>
+    <!--XX END SIDENAV XX-->
+    <main class="main-content position-relative border-radius-lg ">
+        <!--\\\\\\\\\\ Navbar \\\\\\\\\\-->
+        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl nav-color "
+            id="navbarBlur" data-scroll="false">
+            <div class="container-fluid py-1 px-2">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+                        <a class="dropdown-item border-radius-md" href="../pages/profile.html">
+                            <div class="d-flex py-1">
+                                <div class="my-auto">
+                                    <img src="../assets/img/marie.jpg" class="avatar avatar-sm me-3" />
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h6 class="text-sm font-weight-normal mb-1">
+                                        <span class="font-weight-bold text-white text-uppercase ">User name</span>
+                                    </h6>
+                                    <p class="text-xs text-white mb-0">
+                                        <i class="fa fa-phone me-1"></i>
+                                        +237 656222624
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </ol>
+                    <h6 class="font-weight-bolder text-white mb-0">Saving account</h6>
+                </nav>
+                <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center cursor-pointer">
+                        <a href="#" class="nav-link text-white text-body">
+                            <img src="../assets/img/icons/favicon/favicon.ico" height="28" class="text-primary "
+                                alt="main_logo">
+                        </a>
+                    </div>
+                    <ul class="navbar-nav  justify-content-end">
+                        <!-- sidebar menu -->
+                        <li class="nav-item d-xl-none ps-3 pe-3 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
+                                <div class="sidenav-toggler-inner">
+                                    <i class="sidenav-toggler-line bg-white"></i>
+                                    <i class="sidenav-toggler-line bg-white"></i>
+                                    <i class="sidenav-toggler-line bg-white"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- notifications -->
+                        <li class="nav-item dropdown pe-3 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-bell cursor-pointer"></i>
+                            </a>
+                            <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4"
+                                aria-labelledby="dropdownMenuButton">
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="../pages/goal.html">
+                                        <div class="d-flex py-1">
+                                            <div class="my-auto">
+                                                <img src="../assets/img/icons/icons/goal_goals_mark_target_icon.svg"
+                                                    class="avatar avatar-sm me-3" />
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    <span class="font-weight-bold">New goal: UI/UX of...</span>
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i>
+                                                    1 minute ago
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="../pages/activity.html">
+                                        <div class="d-flex py-1">
+                                            <div class="my-auto">
+                                                <img src="../assets/img/icons/icons/activity_color_icon.svg"
+                                                    class="avatar avatar-sm bg-gradient-dark me-3" />
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    <span class="font-weight-bold">New activity (goal name): home
+                                                        page</span>
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i>
+                                                    1 day
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="../pages/activity.html">
+                                        <div class="d-flex py-1">
+                                            <div class="my-auto">
+                                                <img src="../assets/img/icons/icons/7898397_dollar_business_finance_office_marketing_icon.svg"
+                                                    class="avatar avatar-sm bg-gradient-dark me-3" />
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    <span class="font-weight-bold">Goal name: bonus credited
+                                                        (1000xaf)</span>
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i>
+                                                    Aug 24 22:27
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="../pages/activity.html">
+                                        <div class="d-flex py-1">
+                                            <div class="my-auto">
+                                                <img src="../assets/img/icons/icons/activity_color_icon.svg"
+                                                    class="avatar avatar-sm bg-gradient-dark me-3" />
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    <span class="font-weight-bold">New activity (goal name): home
+                                                        page</span>
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i>
+                                                    1 day
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="../pages/sign-in.html" class="nav-link text-white font-weight-bold px-0">
+                                <i class="fa fa-sign-out text-warning me-sm-1"></i>
+                                <span class="d-sm-inline d-none text-warning">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--xx End Navbar xx-->
+
+        <div class="container-fluid">
+            <!-- \\\\\\\\\\\\\\\\\\\\\\\ TITLE OF THE PAGE \\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <h1 class="trans-title display-1 font-weight-bold">Retirement account</h1>
+            <!--\\\\\\\\\\\ OPTION \\\\\\\\\\\-->
+            <section id="menu">
+                <!--"""" NAV: SOLD AND RETIREMENT """"-->
+                <ul class="nav nav-tabs nav-justified margin-top">
+                    <li class="nav-item"><a href="#sold" data-bs-toggle="tab"
+                            class="nav-link active text-uppercase bg-transparent">sold</a></li>
+                    <li class="nav-item"><a href="#retirement" data-bs-toggle="tab"
+                            class="nav-link text-uppercase bg-transparent">retirement</a></li>
+                </ul>
+                <!--"""""" NAV PANES """"""-->
+                <div class="tab-content sidebar-bg mt-3 p-3">
+                    <!-- sold panel -->
+                    <div id="sold" class="tab-pane active">
+                        <div class="row pt-3 pb-3">
+                            <h4 id="" class="h-3 number text-uppercase col-xl-4 col-md-4 col-sm-6">
+                                sold: <span id="sold_amount" class="me-2">200000000</span> xaf
+                            </h4>
+                            <h4 id="" class="h-3 number text-uppercase col-xl-4 col-md-4 col-sm-6">
+                                saved: <span id="sold_saved" class="me-2">197012000</span> xaf
+                            </h4>
+                            <h4 id="" class="h-3 number text-uppercase col-xl-4 col-md-4 col-sm-6">
+                                gain: <span id="sold_increace" class="me-2">2988000</span> xaf
+                            </h4>
+                        </div>
+                        <!-- duration -->
+                        <p class="lead text-trans text-capitalize mt-3">duration: <span class="years">10</span> year(s)
+                            and <span class="month">3</span> month(s). </p>
+
+                    </div>
+                    <!-- retirement panel -->
+                    <div id="retirement" class="tab-pane fade">
+                        <div class="col">
+                            <!-- create retirement account -->
+                            <button type="button" class=" btn btn-lg btn-secondary text-capitalize"
+                                data-bs-toggle="modal" data-bs-target="#create-retirement"><i
+                                    class="far me-3 fa-plus text-white "></i>
+                                <strong>create account</strong>
+                            </button>
+                        </div>
+
+                        <hr>
+                        <!-- modal: create retirement account -->
+                        <div class="modal bg-main" id="create-retirement">
+                            <div class="modal-dialog ">
+                                <div class="modal-content modal-theme">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-uppercase ">create A retirement account</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body ">
+                                        <form action="" method="POST" class="was-validated ">
+
+                                            <div class="mb-3 form-floating">
+                                                <input type="tel" class="form-control" id="tel"
+                                                    placeholder="Enter your contact" name="tel" required>
+                                                <label for="tel" class="text-capitalize">Enter your Phone Number</label>
+                                                <!-- <div class="valid-feedback">Valid.</div> -->
+                                                <div class="invalid-feedback">Please fill out your phone number. <i
+                                                        class="far fa-question-circle text-danger   "></i></div>
+                                            </div>
+                                            <!-- validate to access authentication page -->
+                                            <button type="submit" class="btn btn-dark ">Submit</button>
+
+                                        </form>
+
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--\\\\\\\\\\\ setting \\\\\\\\\\\-->
+                        <form class=" g-3 mb-3 p-1" method="POST" action="">
+                            <div class="bg-main row">
+                                <!-- salary/fund -->
+                                <div
+                                    class="col-xl-4 col-lg-4 col-md-6 col-sm-6 align-items-center justify-content-between d-flex pt-3 pb-2 ">
+                                    <!-- for employee -->
+                                    <!-- <h5 class="h-6 text-uppercase">salary:</h5> -->
+                                    <!-- for enterprise-->
+                                    <h5 class="h-6 text-uppercase">salary:</h5>
+                                    <h5 class="h-6 text-uppercase "><span class="number me-1">300000</span>XAF</h5>
+                                </div>
+                                <!-- percentage -->
+                                <div
+                                    class="col-xl-4 col-lg-4 col-md-6 col-sm-6 align-items-center justify-content-between d-flex pt-3 pb-2">
+                                    <h5 class="h-6 text-uppercase">saving amount:</h5>
+                                    <h5 class="h-6 text-uppercase">
+                                        <select name="percentage" class="form-select" id="percentage">
+                                            <option value="1">1 %</option>
+                                            <option value="2">2 %</option>
+                                            <option value="3">3 %</option>
+                                            <option value="4">4 %</option>
+                                            <option value="5">5 %</option>
+                                            <option value="6">6 %</option>
+                                            <option value="7">7 %</option>
+                                            <option value="8">8 %</option>
+                                            <option value="9">9 %</option>
+                                            <option value="10" selected>10 %</option>
+                                            <option value="11"> 11 %</option>
+                                            <option value="12"> 12 %</option>
+                                            <option value="13"> 13 %</option>
+                                            <option value="14"> 14 %</option>
+                                            <option value="15"> 15 %</option>
+                                            <option value="16"> 16 %</option>
+                                            <option value="17"> 17 %</option>
+                                            <option value="18"> 18 %</option>
+                                            <option value="19"> 19 %</option>
+                                            <option value="20"> 20 %</option>
+                                            <option value="21"> 21 %</option>
+                                            <option value="22"> 22 %</option>
+                                            <option value="23"> 23 %</option>
+                                            <option value="24"> 24 %</option>
+                                            <option value="25"> 25 %</option>
+                                            <option value="26"> 26 %</option>
+                                            <option value="27"> 27 %</option>
+                                            <option value="28"> 28 %</option>
+                                            <option value="29"> 29 %</option>
+                                            <option value="30"> 30 %</option>
+                                            <option value="31"> 31 %</option>
+                                            <option value="32"> 32 %</option>
+                                            <option value="33"> 33 %</option>
+                                            <option value="34"> 34 %</option>
+                                            <option value="35"> 35 %</option>
+                                            <option value="36"> 36 %</option>
+                                            <option value="37"> 37 %</option>
+                                            <option value="38"> 38 %</option>
+                                            <option value="39"> 39 %</option>
+                                            <option value="40"> 40 %</option>
+                                            <option value="41"> 41 %</option>
+                                            <option value="42"> 42 %</option>
+                                            <option value="43"> 43 %</option>
+                                            <option value="44"> 44 %</option>
+                                            <option value="45"> 45 %</option>
+                                            <option value="46"> 46 %</option>
+                                            <option value="47"> 47 %</option>
+                                            <option value="48"> 48 %</option>
+                                            <option value="49"> 49 %</option>
+                                            <option value="50"> 50 %</option>
+                                        </select>
+                                    </h5>
+                                </div>
+                                <!-- dateline -->
+                                <div
+                                    class="col-xl-4 col-lg-4 col-md-6 col-sm-6 align-items-center col-sm-6 justify-content-between d-flex pt-3 pb-2 ">
+                                    <h5 class="h-6 text-uppercase">dateline:</h5>
+                                    <h5 class="h-6 text-uppercase"><input type="month" name="month" id="month"
+                                            class="form-control"></h5>
+                                </div>
+                            </div>
+
+                            <div class="text-end m-3">
+                                <button type="submit"
+                                    class="btn btn-sm btn-secondary col-4 col-md-3 col-lg-2 ">save</button>
+                            </div>
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+
+    <script>
+        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/argon-dashboard.min.js?v=2.0.4"></script>
+</body>
+
+</html>

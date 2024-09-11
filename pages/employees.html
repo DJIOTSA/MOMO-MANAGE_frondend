@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="djiotsa christian (El Mhulo)">
+    <meta name="description"
+        content="Employee-goal-tracker app to manage your employee activities including the payroll system.">
+    <title>MOMO MANAGE</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/icons/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icons/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/icons/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../assets/img/icons/favicon/site.webmanifest" />
+
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/EGT.css" rel="stylesheet" />
+</head>
+
+<body class="g-sidenav-show bg-main">
+    <!--\\\\\\\\\\\\\\\\ navbar background \\\\\\\\\\\\\\\\-->
+    <div class="min-height-300 nav-bg position-absolute  w-100"></div>
+    <!--\\\\\\\\\\\\\\\\ SIDEBAR \\\\\\\\\\\\\\\\-->
+    <aside class="sidenav sidebar-bg navbar navbar-vertical navbar-expand-xs border-0 my-1 fixed-start "
+        id="sidenav-main">
+        <div class="sidenav-header ">
+            <i class="fas fa-times p-1 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+                aria-hidden="true" id="iconSidenav"></i>
+            <a class="m-0" href="">
+                <img src="../assets/img/logos/visa.png" class="nav-logo" alt="main_logo">
+                <span class=" font-weight-bold ">MOMO MANAGE</span>
+            </a>
+        </div>
+        <hr class="horizontal dark mt-0">
+
+        <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+            <ul class="navbar-nav">
+                <!-- dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/dashboard.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-tv-2 text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Dashboard</span>
+                    </a>
+                </li>
+                <!-- Employees pages -->
+                <li class="nav-item">
+                    <a class="nav-link activated shadow-sm" href="../pages/employees.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fa fa-users text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Employees</span>
+                    </a>
+                </li>
+                <!-- make transaction  -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/transaction.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-money-bill-wave-alt text-sm "></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Transactions</span>
+                    </a>
+                </li>
+                <!-- create retirement saving -->
+                <li class="nav-item">
+                    <a class="nav-link  " href="../pages/retiement.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-money-coins text-sm"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Saving account</span>
+                    </a>
+                </li>
+                <!-- chat -->
+                <li class="nav-item">
+                    <a class="nav-link " href="../pages/chat.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-comment-dollar text-sm "></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Discussion</span>
+                    </a>
+                </li>
+                <!-- notification -->
+                <li class="nav-item">
+                    <a class="nav-link " href="../pages/notification.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-bell-55 text-sm"><sup class="">19</sup></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Notification</span>
+                    </a>
+                </li>
+                <!-- FAQs -->
+                <li class="nav-item">
+                    <a class="nav-link " href="../pages/faqs.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-question-circle text-sm"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">FAQs</span>
+                    </a>
+                </li>
+
+                <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\ USER ACCOUNT PAGES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">
+                        Account Details
+                    </h6>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/profile1.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/sign-in.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fa fa-sign-in-alt text-sm"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Sign In</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/sign-up.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fa fa-user-plus text-sm"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Sign Up</span>
+                    </a>
+                </li>
+
+                <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\ MOMO INFORMATION PAGES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">
+                        Who Are we
+                    </h6>
+                </li>
+                <!-- About us -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/aboutus.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-info-circle   text-sm "></i>
+                        </div>
+                        <span class="nav-link-text ms-1">About Us</span>
+                    </a>
+                </li>
+                <!-- license -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/license.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-key text-sm "></i>
+                        </div>
+                        <span class="nav-link-text ms-1">License</span>
+                    </a>
+                </li>
+                <!-- user credentials -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/credential.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-user-secret text-sm "></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Credential</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- sidebnav footer -->
+        <div class="sidenav-footer mx-3 pt-3 ">
+            <a href="../pages/aboutus.html" class="btn bg-gradient-primary btn-sm w-100 mb-3">About Us</a>
+            <a class="btn bg-gradient-warning btn-sm mb-0 w-100" href="../pages/faqs.html" type="button">How does it
+                Works?</a>
+        </div>
+    </aside>
+    <!--XXXXXXXXXXXXXXXX END SIDEBAR XXXXXXXXXXXXXXXX-->
+    <main class="main-content position-relative border-radius-lg ">
+        <!--\\\\\\\\\\\\\\\ Navbar \\\\\\\\\\\\\\\-->
+        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl nav-color "
+            id="navbarBlur" data-scroll="false">
+            <div class="container-fluid py-1 px-2">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+                        <a class="dropdown-item border-radius-md" href="../pages/profile.html">
+                            <div class="d-flex py-1">
+                                <div class="my-auto">
+                                    <img src="../assets/img/marie.jpg" class="avatar avatar-sm me-3" />
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h6 class="text-sm font-weight-normal mb-1">
+                                        <span class="font-weight-bold text-white text-uppercase ">User name</span>
+                                    </h6>
+                                    <p class="text-xs text-white mb-0">
+                                        <i class="fa fa-phone me-1"></i>
+                                        +237 656222624
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </ol>
+                    <h6 class="font-weight-bolder text-white mb-0">Employees</h6>
+                </nav>
+                <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                        <div class="input-group">
+                            <span class="input-group-text text-body "><i class="fas fa-search"
+                                    aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Research here...">
+                        </div>
+                    </div>
+                    <ul class="navbar-nav  justify-content-end">
+                        <!-- sidebar menu -->
+                        <li class="nav-item d-xl-none ps-3 pe-3 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
+                                <div class="sidenav-toggler-inner">
+                                    <i class="sidenav-toggler-line bg-white"></i>
+                                    <i class="sidenav-toggler-line bg-white"></i>
+                                    <i class="sidenav-toggler-line bg-white"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- notifications -->
+                        <li class="nav-item dropdown pe-3 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-bell cursor-pointer"></i>
+                            </a>
+                            <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4"
+                                aria-labelledby="dropdownMenuButton">
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="../pages/goal.html">
+                                        <div class="d-flex py-1">
+                                            <div class="my-auto">
+                                                <img src="../assets/img/icons/icons/goal_goals_mark_target_icon.svg"
+                                                    class="avatar avatar-sm me-3" />
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    <span class="font-weight-bold">New goal: UI/UX of...</span>
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i>
+                                                    1 minute ago
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="../pages/activity.html">
+                                        <div class="d-flex py-1">
+                                            <div class="my-auto">
+                                                <img src="../assets/img/icons/icons/activity_color_icon.svg"
+                                                    class="avatar avatar-sm bg-gradient-dark me-3" />
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    <span class="font-weight-bold">New activity (goal name): home
+                                                        page</span>
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i>
+                                                    1 day
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="../pages/activity.html">
+                                        <div class="d-flex py-1">
+                                            <div class="my-auto">
+                                                <img src="../assets/img/icons/icons/7898397_dollar_business_finance_office_marketing_icon.svg"
+                                                    class="avatar avatar-sm bg-gradient-dark me-3" />
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    <span class="font-weight-bold">Goal name: bonus credited
+                                                        (1000xaf)</span>
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i>
+                                                    Aug 24 22:27
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="../pages/activity.html">
+                                        <div class="d-flex py-1">
+                                            <div class="my-auto">
+                                                <img src="../assets/img/icons/icons/activity_color_icon.svg"
+                                                    class="avatar avatar-sm bg-gradient-dark me-3" />
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    <span class="font-weight-bold">New activity (goal name): home
+                                                        page</span>
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i>
+                                                    1 day
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="../pages/sign-in.html" class="nav-link text-white font-weight-bold px-0">
+                                <i class="fa fa-sign-out text-warning me-sm-1"></i>
+                                <span class="d-sm-inline d-none text-warning">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--XXXXXXXXXXXXXXX End Navbar XXXXXXXXXXXXXXX-->
+        <!--\\\\\\\\\\\\\\\ MAIN CONTAINER \\\\\\\\\\\\\\\-->
+        <div class="container-fluid">
+            <!-- \\\\\\\\\\\\\ TITLE OF THE PAGE \\\\\\\\\\\\\\\\\\\\ -->
+            <h1 class="page-title display-1 fw-bold text-capitalize">My Employees.</h1>
+
+            <section id="employee " class="mat-3 container mb-3">
+                <!--\\\\\\\\\\\\\\\employee list modal add employee category \\\\\\\\\\\\\\\-->
+
+                <div class="row mt-3 ">
+                    <div class="card margin-top ">
+                        <div class="card-body align-middle">
+                            <div class="d-flex justify-content-between">
+                                <div class="col-6 me-3 text-start ">
+                                    <button type="button" class=" btn btn-bg text-capitalize" data-bs-toggle="modal"
+                                        data-bs-target="#add-category">
+                                        <i class="fas fa-plus-circle "></i> <strong>Add
+                                            category</strong>
+                                    </button>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <button type="button" class="btn btn-bg  text-capitalize" data-bs-toggle="modal"
+                                        data-bs-target="#add-employee">
+                                        <i class="fas fa-plus-circle fa-1x "></i> add employee
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--\\\\\\\\\\\\\\\\\\\ table header \\\\\\\\\\\\\\\\\\\\\-->
+                    
+                    <div class="card col-xl-12 mt-3 col-sm-12 col-12">
+                        <div class="card-header bg-transparent  m-0 pb-0 ">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="text-uppercase">employees</h6>
+                                <a href="" class="text-capitalize btn btn-outline-primary" type="zip">
+                                    <i class="fas fa-download "></i>
+                                    <span class="span2">download</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!--\\\\\\\\\\\\\\\\\\\ table  \\\\\\\\\\\\\\\\\\\\\-->
+                        <div class="table-responsive ">
+                            <table class="table align-middle ">
+                                <tbody>
+                                    <tr class="tr">
+                                        <td class="w-30">
+                                            <div class="d-flex px-2 py-1 align-items-center">
+                                                <div class="ms-4">
+                                                    <p class="text-xs text-capitalize mb-0">name</p>
+                                                    <h6 class="text-sm mb-0">Employee name</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="w-30">
+                                            <div class="d-flex px-2 py-1 align-items-center">
+                                                <div class="ms-4">
+                                                    <p class="text-xs  text-capitalize mb-0">contact</p>
+                                                    <h6 class="text-sm mb-0">600000000000</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-center">
+                                                <p class="text-xs text-capitalize mb-0">engaged date </p>
+                                                <h6 class="text-sm mb-0">2023-12-31</h6>
+                                            </div>
+                                        </td>
+                                        <td class="align-middle text-sm">
+                                            <div class="col text-center">
+                                                <p class="text-xs text-capitalize mb-0">category</p>
+                                                <h6 class="text-sm mb-0">Emp category</h6>
+                                            </div>
+                                        </td>
+                                        <td class="align-middle text-sm">
+                                            <div class="col text-center">
+                                                <p class="text-xs   text-capitalize  mb-0">salary</p>
+                                                <h6 class="text-sm mb-0">2 000 000 xaf</h6>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr class="tr">
+                                        <td class="w-30">
+                                            <div class="d-flex px-2 py-1 align-items-center">
+                                                <div class="ms-4">
+                                                    <p class="text-xs text-capitalize mb-0">name</p>
+                                                    <h6 class="text-sm mb-0">Employee name</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="w-30">
+                                            <div class="d-flex px-2 py-1 align-items-center">
+                                                <div class="ms-4">
+                                                    <p class="text-xs  text-capitalize mb-0">contact</p>
+                                                    <h6 class="text-sm mb-0">600000000000</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-center">
+                                                <p class="text-xs text-capitalize mb-0">engaged date </p>
+                                                <h6 class="text-sm mb-0">2023-12-31</h6>
+                                            </div>
+                                        </td>
+                                        <td class="align-middle text-sm">
+                                            <div class="col text-center">
+                                                <p class="text-xs text-capitalize mb-0">category</p>
+                                                <h6 class="text-sm mb-0">Emp category</h6>
+                                            </div>
+                                        </td>
+                                        <td class="align-middle text-sm">
+                                            <div class="col text-center">
+                                                <p class="text-xs   text-capitalize  mb-0">salary</p>
+                                                <h6 class="text-sm mb-0">2 000 000 xaf</h6>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!--\\\\\\\\\\\\\\\\\\\\\\\ modal: add employee category \\\\\\\\\\\\\\\\\\\\\\\-->
+                    <div class="modal " id="add-category">
+                        <div class="modal-dialog  va-middle">
+                            <div class="modal-content  modal-theme">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title text-capitalize">Add employee category</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="javascript: void(0);" method="POST" class="was-validated ">
+                                        <div class="mb-3 mt-3 form-floating">
+                                            <input type="text" class="form-control" id="catName" name="catName"
+                                                placeholder="Category Name" required>
+                                            <label for="catName" class="text-capitalize">Category
+                                                Name</label>
+                                            <!-- <div class="valid-feedback">Valid.</div> -->
+                                            <div class="invalid-feedback">Please fill out this field.
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 form-floating">
+                                            <input type="number" class="form-control" id="salary"
+                                                placeholder="salary per month" name="salary" required>
+                                            <label for="salary" class="text-capitalize">salary per
+                                                month</label>
+                                            <!-- <div class="valid-feedback">Valid.</div> -->
+                                            <div class="invalid-feedback">Please fill out this field.
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-dark ">Submit</button>
+                                    </form>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- \\\\\\\\\\\\\\\\\ add employee modal \\\\\\\\\\\\\\\\\\\\\ -->
+                    <div class="modal bg-main" id="add-employee">
+                        <div class="modal-dialog ">
+                            <div class="modal-content modal-theme">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title text-uppercase ">Add An employee</h4>
+                                    <button type="button" class="btn-close " data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body ">
+                                    <form action="javascript: void(0);" method="POST" class="was-validated ">
+                                        <div class="mb-3 mt-3 form-floating">
+                                            <select class="form-select form-control" id="category" required>
+                                                <option selected disabled value="">...</option>
+                                                <option value="category1">category1 salary: 5000XAF</option>
+                                                <option value="category2">category2 salary: 5000XAF</option>
+                                                <option value="category3">category3 salary: 5000XAF</option>
+                                                <option value="category4">category4 salary: 5000XAF</option>
+                                            </select>
+                                            <label for="category" class="text-capitalize">Category</label>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                        <div class="mb-3 form-floating">
+                                            <input type="tel" class="form-control" id="tel" placeholder="Enter password"
+                                                name="tel" required>
+                                            <label for="tel" class="text-capitalize">Employee Phone Number</label>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-dark text-capitalize">Add Employee</button>
+                                    </form>
+
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+        </div>
+        <!--XXXXXXXXXXXXX END MAIN CONTAINER XXXXXXXXXXXXX-->
+    </main>
+
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+
+    <script>
+        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
+
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/argon-dashboard.min.js?v=2.0.4"></script>
+</body>
+
+</html>

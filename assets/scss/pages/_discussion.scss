@@ -1,0 +1,49 @@
+@use "../abstract/_variables.scss" as *;
+@use 'node_modules/bootstrap/scss/mixins/breakpoints' as *;
+
+.text-dis {
+  color: $navbar-bg;
+  &:active {
+    color: $light-shade-blue-2;
+  }
+}
+
+
+.dis-height-300 {
+    min-height: 150px;
+  }
+  
+
+.dis-title {
+  color: $light-shade-blue-1;
+  // xs
+  @media screen and (max-width: 280px) {
+    font-size: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  //   sm
+  @include media-breakpoint-down(sm) {
+    font-size: 1.4rem;
+    margin-top: 0;
+    // margin-left: 1.3rem;
+  }
+
+  //
+}
+
+
+
+.dis-margin-top {
+  @include media-breakpoint-down(sm) {
+    margin-top: 2rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    margin-top: 2.2rem;
+  }
+
+  @media only screen and (max-width: 280px) {
+    margin-top: 1rem;
+  }
+}

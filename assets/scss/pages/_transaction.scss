@@ -1,0 +1,60 @@
+@use "../abstract/_variables.scss" as *;
+
+.text-trans {
+  color: $navbar-bg;
+  &:active {
+    color: $light-shade-blue-2;
+  }
+}
+
+.trans-title {
+  color: $light-shade-blue-1;
+  margin-top: 2rem;
+  // lg
+   @include media-breakpoint-up(md){
+    font-size: 3rem;
+   }
+  //  md
+   @include media-breakpoint-down(md){
+    font-size: 2.2rem;
+   }
+  //  sm device
+  @include media-breakpoint-down(sm){
+    font-size: 1.2rem;
+   }
+
+  // xs
+  @media only screen and (max-width: 280px){
+    font-size: 1rem;
+    margin-top: .3rem;
+  }
+
+
+}
+
+.trans-margin-top {
+  @include media-breakpoint-down(sm) {
+    margin-top: 2rem;
+  }
+
+  @include media-breakpoint-up(sm){
+    margin-top: 2.2rem;
+  }
+
+  @media only screen and (max-width: 280px){
+    margin-top: 1rem;
+  }
+}
+
+.trans-height-300 {
+  min-height: 180px;
+  // md
+  @include media-breakpoint-up(sm){
+    min-height: 200px;
+  }
+
+  // xs
+  @media screen and (max-width: 280px){
+    min-height: 190px;
+  }
+}

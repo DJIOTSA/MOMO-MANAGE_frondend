@@ -1,0 +1,39 @@
+
+.sidebar-bg{
+    background-color: #e6f4ff;
+    color: $black;
+    box-shadow: 1rem solid $black;
+    border-top-right-radius: .6rem;
+    border-bottom-right-radius: .6rem;
+
+    .nav-logo{
+      width: 6rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: $green;
+    }
+    span{
+        color: $dark-blue;
+        font-weight: 900;
+    }
+
+    i{
+        color: $dark-gray;
+    }
+
+    .activated{
+        background-color: rgba($color: $navbar-bg, $alpha: .5);
+        border-radius: .69rem;
+        color: rgba($color: $main, $alpha: 1.0);
+        div i, span{
+            color: $white;
+        }
+        
+    }
+}
+
+aside{
+    border: 3px solid $black !important;
+}

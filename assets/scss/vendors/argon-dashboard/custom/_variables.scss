@@ -1,0 +1,22 @@
+// my custom theme
+$light-shade-blue-1: #f5f8fa; // main background 1
+$light-shade-blue-2: #eef2f5; // main background 2
+$dark-blue: #253746; // navigation and header
+$green: #3bb873; //button and interactive elements
+$dark-gray: #333333; //text and icons
+$orange: #f2711c; // alert and highlight
+$white:  #fff;
+
+
+// primary
+$primary: $light-shade-blue-2;
+
+// override creative-time theme
+$argon-background-color: $light-shade-blue-1 ; 
+$font-color:            $dark-gray ;
+$h-color:               $dark-blue ;
+
+// import creative-time variables
+@import 'assets/scss/vendors/argon-dashboard/_variables.scss';
+
+

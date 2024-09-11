@@ -1,0 +1,13 @@
+
+// GRADIENT MIXIN
+@mixin gradient{
+    background: linear-gradient(to right, rgba($light-shade-blue-2, 0.95), rgba($light-shade-blue-1 .95));
+}
+
+// absolute center (bootstrap equivalent: class="position-absolute top-50 start-50 translate-middle")
+@mixin absolute-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

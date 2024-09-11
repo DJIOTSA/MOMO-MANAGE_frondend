@@ -1,0 +1,30 @@
+// =========================================================
+// * Argon Dashboard 2 - v2.0.4
+// =========================================================
+//
+// * Product Page: https://www.creative-tim.com/product/argon-dashboard
+// * Copyright 2022 Creative Tim (https://www.creative-tim.com)
+//
+// Coded by www.creative-tim.com
+//
+// =========================================================
+//
+// * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+// Bootstrap Functions
+// @import "node_modules/bootstrap/scss/functions";
+
+// Custom Variables
+@import "vendors/argon-dashboard/custom/variables";
+
+//Theme Variables
+// @import "argon-dashboard/variables";
+
+
+// @import "node_modules/bootstrap/scss/bootstrap";
+
+// Theme Core
+@import "argon-dashboard/theme";
+
+// Custom style
+@import "argon-dashboard/custom/styles";

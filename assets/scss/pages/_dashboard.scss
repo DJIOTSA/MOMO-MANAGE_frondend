@@ -1,0 +1,8 @@
+
+.margin-top{
+    margin-top: 3rem;
+
+    @include media-breakpoint-down(sm){
+        margin-top: 2rem;
+    }
+}
