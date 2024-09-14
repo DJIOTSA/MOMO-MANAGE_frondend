@@ -1,0 +1,10 @@
+
+.btn-emp{
+    background-color: $navbar-bg;
+    color: $light-shade-blue-1;
+
+    &:hover{
+        background-color: rgba($navbar-bg, 0.6);
+        color: rgba($light-shade-blue-1, 0.6)
+    }
+}

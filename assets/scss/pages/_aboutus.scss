@@ -1,0 +1,45 @@
+.about-des {
+  color: $light-shade-blue-1;
+
+
+  @media (max-width: 1070px){
+    font-size: 1.125rem;
+  }
+
+  @media (max-width: 812px){
+    font-size: 1.05rem;
+  }
+
+  @media (max-width: 681px){
+    font-size: 0.945rem;
+  } 
+
+  @media (max-width: 523px){
+    font-size: 0.925rem;
+  } 
+
+  @media (max-width: 499px){
+    font-size: 0.805rem;
+  } 
+
+  @media (max-width: 388px){
+    font-size: 0.735rem;
+  } 
+
+  @media (max-width: 366px){
+    font-size: 0.695rem;
+  } 
+
+  @media (max-width: 279px){
+    font-size: 0.650rem;
+  } 
+
+  @media (max-width: 254px){
+    font-size: 0.595rem;
+  } 
+
+  @media (max-width: 228px){
+    font-size: 0.535rem;
+  } 
+
+}

@@ -9,7 +9,7 @@ var Paths = {
   HERE: './',
   DIST: 'dist/',
   CSS: './assets/css/',
-  SCSS_TOOLKIT_SOURCES: './assets/scss/EGT.scss',
+  SCSS_TOOLKIT_SOURCES: './assets/scss/momo-manage.scss',
   SCSS: './assets/scss/**/**/**'
 };
 
@@ -27,7 +27,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('open', function() {
-  gulp.src('./pages/sign-up.html')
+  gulp.src('./index.html')
     .pipe(open());
 });
 

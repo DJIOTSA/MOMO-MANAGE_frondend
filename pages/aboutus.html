@@ -10,11 +10,7 @@
   <title>MOMO MANAGE</title>
 
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/icons/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icons/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/icons/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="../assets/img/icons/favicon/site.webmanifest" />
-
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/logos/visa.png" />
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <!-- Nucleo Icons -->
@@ -24,12 +20,12 @@
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
-  <link id="pagestyle" href="../assets/css/EGT.css" rel="stylesheet" />
+  <link id="pagestyle" href="../assets/css/momo-manage.css" rel="stylesheet" />
 </head>
 
 <body class="g-sidenav-show bg-main">
   <!-- \\\\\\\\\\\\\\\\\ NAVBAR BG \\\\\\\\\\\\\\\\\\\\\\\\\ -->
-  <div class="min-height-300 nav-bg position-absolute w-100"></div>
+  <div class="min-height-500 nav-bg position-absolute w-100"></div>
   <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
                            SIDENAV BAR  
         ///////////////////////////////////////////////////// -->
@@ -49,7 +45,7 @@
       <ul class="navbar-nav">
         <!--\\\\\\\\\\\\\\\\\\\\\\\ dashboard \\\\\\\\\\\\\\\\\\\\\\\-->
         <li class="nav-item">
-          <a class="nav-link  shadow-sm" href="../pages/dashboard.html">
+          <a class="nav-link " href="../pages/dashboard.html">
             <div
               class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-tv-2 text-sm opacity-10"></i>
@@ -181,17 +177,6 @@
             <span class="nav-link-text ms-1">License</span>
           </a>
         </li>
-        <!--\\\\\\\\\\\\\\\\\\\\\\\\\\ user credentials \\\\\\\\\\\\\\\\\\\\\\\\\\-->
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/credential.html">
-            <div
-              class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="fas fa-user-secret text-sm "></i>
-            </div>
-            <span class="nav-link-text ms-1">Credential</span>
-          </a>
-        </li>
-
       </ul>
     </div>
     <!-- sidebnav footer -->
@@ -350,24 +335,67 @@
     <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\__ MAIN CONTENT __\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
     <div class="container-fluid">
       <!-- \\\\\\\\\\\\\\\\\\\\\\\ TITLE OF THE PAGE \\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <h1 class="page-title display-1 fw-bold text-capitalize">About Us</h1>
-      <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-                             global information SECTION
-            /////////////////////////////////////////////////////////////-->
-      <section id="global-informations" class="justify-content-center ">
-        <div class="row margin-top">
-          
+      <h1 class="page-title display-5 fw-bold text-capitalize">About Us</h1> 
+
+      <section id="about-us" class="mt-4 <i class="mdi mdi-battery-30-bluetooth:"></i>">
+        <p class="lead about-des fw-bold ">
+          At <strong>MOMO MANAGE</strong>, we are a team of seasoned professionals dedicated to revolutionizing the way businesses manage payments and financial transactions. With years of experience in finance, technology, and business operations, our experts bring cutting-edge solutions tailored to streamline payroll, transaction management, and financial insights. 
+          Our deep understanding of the challenges businesses face allows us to craft secure, efficient, and innovative tools that empower business owners and employees alike. We're committed to driving success through precision, reliability, and expert guidance every step of the way.
+        </p>
+      </section>
+  
+      <!-- Services Section -->
+      <section id="services" class="pt-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row text-center">
+          <!-- Payment Management -->
+          <div class="col-md-4 mb-4">
+            <i class="fas fa-money-check-alt fa-3x text-primary"></i>
+            <h3 class="mt-3">Payment Management</h3>
+            <p>We help business owners and employees seamlessly manage payments and automate payroll.</p>
+          </div>
+  
+          <!-- Financial Summaries -->
+          <div class="col-md-4 mb-4">
+            <i class="fas fa-chart-line fa-3x text-success"></i>
+            <h3 class="mt-3">Financial Summaries</h3>
+            <p>Get detailed statistical summaries showcasing the state of your business with daily, weekly, monthly, and yearly reports.</p>
+          </div>
+  
+          <!-- Security -->
+          <div class="col-md-4 mb-4">
+            <i class="fas fa-shield-alt fa-3x text-danger"></i>
+            <h3 class="mt-3">Security</h3>
+            <p>Our platform ensures the highest level of security for all your transactions with fast, easy-to-use tools.</p>
+          </div>
         </div>
       </section>
-      <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-                             graph evaluation tracker SECTION
-            /////////////////////////////////////////////////////////////-->
-      <section id="about-us">
-        <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
-        <div class="container">
-          
+
+      <!-- Advantages Section -->
+      <section id="advantages" class="bg-light p-5 mt-5">
+        <h2 class="text-center mb-4">Why Choose Us?</h2>
+        <div class="row text-center">
+          <!-- Expertise -->
+          <div class="col-md-4 mb-4">
+            <i class="fas fa-user-tie fa-3x text-primary"></i>
+            <h3 class="mt-3">Expert Team</h3>
+            <p>Our team of seasoned professionals brings extensive experience in finance, technology, and business management.</p>
+          </div>
+  
+          <!-- Innovation -->
+          <div class="col-md-4 mb-4">
+            <i class="fas fa-lightbulb fa-3x logout-color"></i>
+            <h3 class="mt-3">Innovative Solutions</h3>
+            <p>We provide cutting-edge tools that simplify payroll, transactions, and financial analysis for businesses of all sizes.</p>
+          </div>
+  
+          <!-- Reliability -->
+          <div class="col-md-4 mb-4">
+            <i class="fas fa-check-circle fa-3x text-success"></i>
+            <h3 class="mt-3">Reliability</h3>
+            <p>We offer secure, efficient services you can rely on to drive your business’s financial success.</p>
+          </div>
         </div>
-     
       </section>
       
     </div>

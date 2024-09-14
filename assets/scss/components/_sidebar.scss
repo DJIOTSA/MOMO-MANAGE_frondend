@@ -1,10 +1,10 @@
 
 .sidebar-bg{
-    background-color: #e6f4ff;
-    color: $black;
-    box-shadow: 1rem solid $black;
-    border-top-right-radius: .6rem;
-    border-bottom-right-radius: .6rem;
+    background-color: $light-shade-blue-2;
+    color: $dark-gray;
+    box-shadow: 1rem .5rem solid $black;
+
+    
 
     .nav-logo{
       width: 6rem;
@@ -24,16 +24,11 @@
     }
 
     .activated{
-        background-color: rgba($color: $navbar-bg, $alpha: .5);
-        border-radius: .69rem;
-        color: rgba($color: $main, $alpha: 1.0);
-        div i, span{
-            color: $white;
-        }
-        
+        background-color: rgba($navbar-bg, 0.3);
+        border-radius: 1rem;
     }
 }
 
 aside{
-    border: 3px solid $black !important;
+    border: 1rem solid $black !important;
 }
